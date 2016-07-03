@@ -1,0 +1,216 @@
+$bkg: #d6cfc3;
+$lines: #2c3233;
+$col1: #e8e8eb;
+$col2: #cc9062;
+$col3: #664752;
+$col4: #5c7999;
+
+//SVG CSS Styles
+
+.st0,
+.st1,
+.st2 {
+  stroke: $lines;
+  stroke-linecap: round;
+  stroke-width: 2;
+}
+
+.st0,
+.st2 {
+  fill: none;
+}
+
+.st0,
+.st1 {
+  stroke-linejoin: round;
+}
+
+.st1 {
+  fill: $bkg;
+}
+
+.st4 {
+  fill: $bkg;
+}
+
+.col1 {
+  fill: $col1;
+}
+
+.col2 {
+  fill: $col2;
+}
+
+.col3 {
+  fill: $col3;
+}
+
+.col4 {
+  fill: $col4;
+}
+
+.col5 {
+  fill: $bkg;
+}
+
+.col6 {
+  fill: $lines;
+}
+
+.bird {
+  opacity: 0;
+}
+
+.stars {
+  opacity: 0;
+}
+
+.lines {
+  opacity: 0;
+}
+
+.hidden {
+  display: none;
+}
+
+//Main Styles
+
+body {
+  background-color: $bkg;
+  font-family: 'Bevan', cursive;
+}
+
+header {
+  background-color: $bkg;
+  padding: 10px;
+  text-align: center;
+}
+
+footer {
+  text-align: center;
+}
+
+li {
+  display: inline;
+  padding-left: 15px;
+  text-transform: uppercase;
+
+  &:before {
+    content: ' * ';
+    padding-right: 15px;
+  }
+
+  &:first-child {
+
+    &:before {
+      content: none;
+    }
+  }
+}
+
+h1,
+h2 {
+  color: $lines;
+  font-family: 'Wire One', sans-serif;
+  font-weight: bold;
+  line-height: 40px;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-size: 40px;
+}
+
+h2 {
+  font-size: 30px;
+}
+
+h3 {
+  color: $lines;
+  font-family: 'Bevan', cursive;
+  font-size: 14px;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  text-transform: uppercase;
+  width: 50%;
+
+  &:before,
+  &:after {
+    background-color: $lines;
+    content: '';
+    display: inline-block;
+    height: 1px;
+    position: relative;
+    vertical-align: middle;
+    width: 50%;
+  }
+
+  &:before {
+    margin-left: -50%;
+    right: .5em;
+  }
+
+  &:after {
+    left: .5em;
+    margin-right: -50%;
+  }
+}
+
+a {
+  color: $lines;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 800px;
+}
+
+.mainimg {
+  max-height: 70vh;
+}
+
+.logo {
+  align-items: center;
+  border: 2px dashed $lines;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  height: 150px;
+  justify-content: center;
+  margin: 0 auto;
+  width: 150px;
+}
+
+//Media Queries
+
+//Large Devices, Wide Screens
+@media only screen and (max-width: 1200px) {
+
+}
+
+//Medium Devices, Desktops
+@media only screen and (max-width: 992px) {
+
+}
+
+//Small Devices, Tablets
+@media only screen and (max-width: 768px) {
+
+}
+
+//Extra Small Devices, Phones
+@media only screen and (max-width: 480px) {
+
+}
+
+//Custom, iPhone Retina
+@media only screen and (max-width: 320px) {
+
+}
